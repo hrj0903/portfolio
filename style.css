@@ -12,6 +12,7 @@
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
+
   /* Font Size */
   --font-large: 48px;
   --font-medium: 28px;
@@ -137,4 +138,14 @@ p {
 .about__description {
   margin: auto;
   max-width: 700px;
+}
+
+/* skillset */
+.skillset__icon {
+  width: 150px;
+  transition: transform 200ms ease-in;
+}
+
+.skillset__icon:hover {
+  transform: scale(1.1);
 }
