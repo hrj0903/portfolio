@@ -63,22 +63,19 @@ button {
 h1 {
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
-
   margin: 16px 0px;
 }
 
 p {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
-
   margin: 4px 0;
 }
 
 /* navbar */
-
 #navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 16px;
 }
@@ -113,7 +110,7 @@ p {
 /* Home */
 #home {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
   align-items: center;
   width: 80%;
@@ -128,4 +125,16 @@ p {
   border: 1px solid var(--color-white);
   border-radius: var(--size-border-radius);
   color: var(--color-white);
+}
+
+/* section common */
+.section {
+  padding: 50px;
+  text-align: center;
+}
+
+/* about */
+.about__description {
+  margin: auto;
+  max-width: 700px;
 }
