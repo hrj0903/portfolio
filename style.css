@@ -25,6 +25,7 @@
   --weight-regular: 400;
 
   /* Size */
+  --size-border-radius: 4px;
 }
 
 /* Universal tags */
@@ -44,8 +45,18 @@ a {
 }
 
 ul {
-  list-style: none;
   padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 /* Typography */
@@ -97,4 +108,24 @@ p {
 
 .navbar__link__item {
   margin: 0 8px;
+}
+
+/* Home */
+#home {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.home__info__btn {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 1px solid var(--color-white);
+  border-radius: var(--size-border-radius);
+  color: var(--color-white);
 }
