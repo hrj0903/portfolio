@@ -86,6 +86,7 @@ p {
   align-items: center;
   padding: 16px;
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
@@ -153,7 +154,7 @@ p {
 
 /* section common */
 .section {
-  padding: 50px;
+  padding: 70px;
   text-align: center;
 }
 
