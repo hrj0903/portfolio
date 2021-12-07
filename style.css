@@ -142,6 +142,10 @@ p {
   padding-top: 120px;
 }
 
+#home.transparent {
+  opacity: 0;
+}
+
 .home__btn {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
