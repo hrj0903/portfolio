@@ -177,3 +177,19 @@ p {
   border-color: var(--color-yellow);
   color: var(--color-yellow);
 }
+
+/* contact */
+.contact__title {
+  margin: 32px 0;
+}
+
+.contact__links {
+  margin: auto;
+  display: block;
+  width: 200px;
+  height: 100px;
+  line-height: 100px;
+  border: 1px solid var(--color-white);
+  margin-bottom: 20px;
+  border-radius: var(--size-border-radius);
+}
