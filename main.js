@@ -11,17 +11,24 @@ document.addEventListener('scroll', () => {
   }
 });
 
-// Handle scrolling when tapping on the navbar menu
+// handle scrolling when tapping on the navbar menu
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) => {
   const target = event.target;
   const link = target.dataset.link;
-  console.log(link);
   if (link == null) {
     return;
   }
-  const scrollTo = document.querySelector(link);
-  scrollTo.scrollIntoView({
-    behavior: 'smooth',
-  });
+  scrollIntoView(link);
 });
+
+// handle scrolling to projects when tapping on the home button
+const homeBtn = document.querySelector('.home__btn');
+homeBtn.addEventListener('click', (event) => {
+  scrollIntoView('#projects');
+});
+
+function scrollIntoView(selector) {
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({ behavior: 'smooth' });
+}
