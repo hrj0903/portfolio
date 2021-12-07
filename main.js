@@ -5,9 +5,9 @@ const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
   if (window.scrollY > navbarHeight) {
-    navbar.classList.add('navbar--dark');
+    navbar.classList.add('navbar--light');
   } else {
-    navbar.classList.remove('navbar--dark');
+    navbar.classList.remove('navbar--light');
   }
 });
 
@@ -19,7 +19,14 @@ navbarMenu.addEventListener('click', (event) => {
   if (link == null) {
     return;
   }
+  navbarMenu.classList.remove('open');
   scrollIntoView(link);
+});
+
+// navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
 });
 
 // handle scrolling to projects when tapping on the home button
