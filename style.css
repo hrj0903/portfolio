@@ -114,7 +114,7 @@ p {
 .navbar__menu__item {
   border: 1px solid transparent;
 }
-.navbar__menu__item.selected {
+.navbar__menu__item.active {
   color: var(--color-orange);
 }
 
